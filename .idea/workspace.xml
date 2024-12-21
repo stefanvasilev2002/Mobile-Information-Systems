@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2c9dcaa-14b8-4c59-b56f-3a6f98efb118" name="Changes" comment="Lab 2">
-      <change afterPath="$PROJECT_DIR$/Lab2/lib/screens/favorites_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab2/lib/services/notification_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mobile-Information-Systems.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mobile-Information-Systems.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/lib/models/joke.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/lib/models/joke.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/lib/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/lib/screens/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/lib/screens/jokes_list_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/lib/screens/jokes_list_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/pubspec.yaml" afterDir="false" />
+    <list default="true" id="f2c9dcaa-14b8-4c59-b56f-3a6f98efb118" name="Changes" comment="Lab 3">
+      <change afterPath="$PROJECT_DIR$/Lab4/lib/models/exam_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/lib/providers/exam_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/lib/screens/add_event_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/lib/screens/calendar_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/lib/screens/map_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +31,10 @@
     &quot;accountId&quot;: &quot;185b6175-9284-4000-ba0f-112420838fd7&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -49,27 +45,31 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Flutter.main.dart (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/38978/flutter/bin/cache/dart-sdk&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.main.dart (1).executor": "Run",
+    "Flutter.main.dart.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/38978/flutter/bin/cache/dart-sdk",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "dart.settings",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Flutter.main.dart (1)">
+    <configuration name="main.dart (1)" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/Lab4/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Lab2and3/lib/main.dart" />
       <method v="2" />
@@ -80,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Flutter.main.dart (1)" />
         <item itemvalue="Flutter.main.dart" />
       </list>
@@ -104,6 +105,7 @@
       <workItem from="1734787157284" duration="429000" />
       <workItem from="1734788679256" duration="556000" />
       <workItem from="1734789253941" duration="5367000" />
+      <workItem from="1734797278855" duration="2978000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 2">
       <option name="closed" value="true" />
@@ -113,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734789292463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lab 3">
+      <option name="closed" value="true" />
+      <created>1734797421149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734797421149</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lab 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 2" />
+    <MESSAGE value="Lab 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
