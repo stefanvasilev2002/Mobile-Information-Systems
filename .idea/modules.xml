@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mobile_information_systems.iml" filepath="$PROJECT_DIR$/mobile_information_systems.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/mobile_information_systems_android.iml" filepath="$PROJECT_DIR$/android/mobile_information_systems_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mobile-Information-Systems.iml" filepath="$PROJECT_DIR$/.idea/Mobile-Information-Systems.iml" />
     </modules>
   </component>
 </project>
