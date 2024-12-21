@@ -4,10 +4,14 @@ import '../services/api_services.dart';
 
 class JokesListScreen extends StatefulWidget {
   final String jokeType;
+  final Function(Joke) onAddFavorite;
+  final Function(Joke) onRemoveFavorite;
 
   const JokesListScreen({
     Key? key,
     required this.jokeType,
+    required this.onAddFavorite,
+    required this.onRemoveFavorite,
   }) : super(key: key);
 
   @override
@@ -31,10 +35,23 @@ class _JokesListScreenState extends State<JokesListScreen> {
         jokes = loadedJokes;
       });
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: ${e.toString()}')),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: ${e.toString()}')),
+        );
+      }
     }
+  }
+
+  void _toggleFavorite(Joke joke) {
+    setState(() {
+      joke.isFavorite = !joke.isFavorite;
+      if (joke.isFavorite) {
+        widget.onAddFavorite(joke);
+      } else {
+        widget.onRemoveFavorite(joke);
+      }
+    });
   }
 
   @override
@@ -46,15 +63,23 @@ class _JokesListScreenState extends State<JokesListScreen> {
       body: ListView.builder(
         itemCount: jokes.length,
         itemBuilder: (context, index) {
+          final joke = jokes[index];
           return Card(
             margin: const EdgeInsets.all(8),
             child: ExpansionTile(
-              title: Text(jokes[index].setup),
+              title: Text(joke.setup),
+              trailing: IconButton(
+                icon: Icon(
+                  joke.isFavorite ? Icons.favorite : Icons.favorite_border,
+                  color: joke.isFavorite ? Colors.red : null,
+                ),
+                onPressed: () => _toggleFavorite(joke),
+              ),
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16),
                   child: Text(
-                    jokes[index].punchline,
+                    joke.punchline,
                     style: const TextStyle(
                       fontStyle: FontStyle.italic,
                     ),

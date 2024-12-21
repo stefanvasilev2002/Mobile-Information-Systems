@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:lab2/services/notification_service.dart';
 import 'screens/home_screen.dart';
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final notificationService = NotificationService();
+  await notificationService.initNotification();
   runApp(const MyApp());
 }
 
@@ -16,6 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      navigatorKey: navigatorKey,
       home: const HomeScreen(),
     );
   }
